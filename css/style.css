@@ -1,0 +1,181 @@
+body
+{
+	margin-top:2%;
+	background-color:#00c091;
+}
+.container
+{
+	background-color: white;
+	margin-bottom:2%;
+}
+.user_photo
+{
+	width:121px;
+	height:121px;
+	border:1px solid gray;
+	margin-top:12%;
+}
+
+.user_icon
+{
+	margin-top:-2%;
+	margin-left: 2%;
+	position: absolute;
+	top:40;
+}
+.user_icon:hover
+{
+	cursor:pointer;
+}
+.user_photo:hover
+{
+	cursor:pointer;
+}
+/*model start*/
+.modal
+{
+	top:100;
+}
+.modal-body
+{
+	text-align: center;
+}
+.button_border
+{
+	border:1px solid  gray;
+	border-radius: 15px;
+}
+.facebook_button
+{
+	background-color: #314f96;
+	color:white;
+}
+
+.modal-dialog .modal-additional
+{
+	position: relative;
+    bottom: 20px;
+    background-color: #e6e6e6;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0;
+    padding: 50px 40px 30px;
+    z-index: -1;
+    border: 1px solid transparent;
+    width: calc(100% - 2px);
+    margin: 0 auto;
+}
+@media (min-width: 769px){
+	.modal-dialog 
+	{
+    	width: 400px;
+	}
+	.modal-content 
+	{
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	}
+}
+.btn-default:hover 
+{
+    color: black!important;
+    border-color: #00c091!important;
+    background-color: transparent;!important;
+}
+.btn:hover, .btn:focus, .btn.focus 
+{
+    color: white;
+    text-decoration: none;
+}
+/*model end*/
+
+/*resume_heading start*/
+.resume_heading
+{
+	font-size:25px;
+}
+.width100
+{
+	width:100%;
+}
+.background_transparent
+{
+	background-color: transparent;
+	border:none;
+}
+.input-group-addon
+{
+	border:none;
+}
+.form-control
+{
+	box-shadow: none;
+}
+.form-control:focus 
+{
+    border-color: #ddd;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/*resume_heading end*/
+
+/*summary start*/
+.full_div
+{
+	margin-top:2%;
+}
+.fixed_textarea
+{
+	resize: none;	
+}
+
+.border_right
+{
+	border-right:1px solid lightgray;
+}
+.language_detail
+{
+	margin-top:2%;
+}
+.comany_name
+{
+	width:75%;
+}
+.float_left
+{
+	float:left;
+}
+.float_right
+{
+	float: right;
+}
+h2
+{
+	margin-top:10px!important;
+	margin-bottom:0px!important;
+}
+.fa
+{
+	display:table-cell!important;
+}
+.width60
+{
+	width:60%;
+}
+.width40
+{
+	width:40%;
+}
+.icon_color
+{
+	color:#003e5a;
+}
+.btn-success
+{
+	width:32%!important;
+}
+.clear
+{
+	clear: both;
+}

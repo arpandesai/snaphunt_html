@@ -1,0 +1,181 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/query.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="col-lg-12 color_change_on_click">
+			<div class="col-lg-3" data-toggle="modal" data-target="#myModal">
+				<img class="img-circle user_photo" src="user.png" style="position:relative;" />
+				<i class="fa fa-retweet fa-2x user_icon icon_color"></i>
+			</div>
+
+			<div class="col-lg-6">
+				
+				<h2><textarea placeholder="Your name" class="form-control background_transparent width100px resume_heading fixed_textarea" rows="1" required></textarea></h2>
+				
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-map-marker fa-lg icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Your address" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+				</div>
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-phone fa-lg icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Your phone" class="form-control background_transparent fixed_textarea" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required ></textarea>
+				</div>
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-at fa-lg icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Your e-mail" class="form-control background_transparent fixed_textarea" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required ></textarea>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+
+			</div>
+		</div>		
+		
+
+		<div class="clear"></div>
+		<hr/>
+		<div class="clear"></div>
+
+		<div clss="col-lg-12 color_change_on_click full_div">
+			
+			<div class="col-md-1">	
+			<i class="input-group-addon fa fa-user-circle-o fa-3x icon_color float_left"></i>
+			</div>
+			<div class="col-md-11">
+				<textarea placeholder="Summary" class="form-control background_transparent fixed_textarea resume_heading" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required ></textarea>
+			</div>
+			<div class="col-md-12">
+				<textarea placeholder="Summary Details" class="form-control background_transparent" rows="3" aria-describedby="basic-addon1" required></textarea>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		<hr/>
+		<div class="clear"></div>
+
+
+		<div class="col-lg-12">
+			<div class="col-lg-4 border_right">
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-flag-o fa-3x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Achivements" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required ></textarea>
+				</div>
+
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-trophy fa-2x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+				</div>
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-trophy fa-2x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+				</div>
+
+				
+
+				<hr/>
+
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-graduation-cap fa-3x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Education" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required ></textarea>
+				</div>
+
+				<textarea placeholder="Education Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+				<textarea placeholder="Education Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+
+				<hr/>
+
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-language fa-3x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Languages" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required ></textarea>
+				</div>
+				<div class="float_left">
+					<textarea placeholder="Languages Details" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>	
+				</div>
+				<div class="float_right">
+					<textarea placeholder="Languages Level" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+				</div>
+				<div class="clear"></div>
+				<div class="float_left">
+					<textarea placeholder="Languages Details" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>	
+				</div>
+				<div class="float_right">
+					<textarea placeholder="Languages Level" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+				</div>
+
+				<div class="clear"></div>
+				<hr/>
+
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-star-o fa-3x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Interests" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+				</div>
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-star fa-2x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+				</div>
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-star fa-2x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+				</div>
+
+			</div>
+
+			
+			<div class="col-lg-8">
+				<div class="input-group">
+				  	<span class="input-group-addon fa fa-briefcase fa-3x icon_color" id="basic-addon1" aria-hidden="true"></span>
+				  	<textarea placeholder="Experience" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+				</div>
+
+				<div class="float_left comany_name">
+				<textarea placeholder="Company Name" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+				</div>
+				<div class="float_right">
+				<input type="month" class="form-control background_transparent"></textarea>
+				</div>
+				<textarea placeholder="Company Address" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+
+				<textarea placeholder="Company Description" class="form-control background_transparent fixed_textarea" rows="4" required ></textarea>
+				
+				<textarea placeholder="My Role" class="form-control background_transparent fixed_textarea" rows="4" required ></textarea>
+
+
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        	<span aria-hidden="true">&times;</span>
+		        </button>
+		        <h4 class="modal-title">Photo</h4>
+		      </div>
+		      <div class="modal-body">
+		        <img class="img-circle user_photo" src="user.png"/>
+		      </div>
+		      <div class="modal-footer">
+		      	<span class="float_left">Import photo</span><br/>
+		        <button type="button" class="btn btn-default button_border float_left">From Computer</button><br/><br/>
+		        <button type="button" class="btn button_border float_left facebook_button">From Facebook</button>
+		        <button type="button" class="btn btn-success button_border float_right">Ok</button>
+		      </div>
+		    </div>
+		    <p class="modal-additional text-center">Disclaimer. Please keep that in some states is USA it’s not allowed to add photo to your resume</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

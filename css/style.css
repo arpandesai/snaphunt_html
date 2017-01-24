@@ -7,6 +7,23 @@ body
 {
 	background-color: white;
 	margin-bottom:2%;
+	padding-left:0;
+	padding-right: 0; 
+}
+.color_change_on_click
+{
+	padding-left:0;
+	padding-right:0;
+}
+.margin_lr_0
+{
+	padding-left:0;
+	padding-right:0;
+}
+hr
+{
+	margin-top:0!important;
+	margin-bottom:0!important;
 }
 .user_photo
 {

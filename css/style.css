@@ -16,12 +16,7 @@ body
 {
 	padding-left:0;
 	padding-right:0;
-	border:1px solid white;
-}
-.color_change_on_click:hover
-{
-    border: 1px solid #60d5ba;
-    border-radius:5px;
+	border:1px solid transparent;
 }
 .margin_lr_0
 {
@@ -41,7 +36,7 @@ hr
 	height: 1em;
 	vertical-align: -0.05em;
 }
-.lnr-user,.lnr-flag,.lnr-text-format
+.lnr-user,.lnr-flag,.lnr-text-format,.lnr-briefcase
 {
 	font-size: 20px!important;
     margin-left: 5px;
@@ -59,7 +54,13 @@ hr
     margin-left: 5px;
     margin-top: 8px;	
 }
-.lnr-star-empty,.lnr-paperclip
+.trophy
+{
+	height:15px;
+	margin-left:5px;
+	margin-top:8px;
+}
+.lnr-star-empty,.lnr-paperclip,.lnr-map-marker,.lnr-phone-handset,.lnr-map-marker
 {
 	font-size: 15px!important;
     margin-left: 9px;
@@ -74,7 +75,7 @@ hr
 	width:121px;
 	height:121px;
 	border:1px solid gray;
-	margin-top:12%;
+	margin-top:6.5%;
 }
 
 .user_icon

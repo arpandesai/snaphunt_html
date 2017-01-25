@@ -10,22 +10,29 @@ $(document).ready(function() {
 	});
 	
 	$(document).on("click",".color_change_on_click",function(){
-		$(".color_change_on_click").css({"background-color":"#B2ECDD","border":"none"});
+		$(".color_change_on_click").css("background-color","#B2ECDD");
 		$(".icon_color").css("background-color","#B2ECDD");
 		$(".container").css("background-color","#B2ECDD");
 		$(".user_photo").css("opacity","0.2");
-		$(this).css({"background-color":"white","border":"1px solid #B2ECDD"});
+		$(this).css("background-color","white");
 		$(this).find("i").css("background-color","white");
 		$(this).find(".user_photo").css("opacity","10");
 	});
 
+	$(".color_change_on_click").mouseenter(function() {
+	    $(this).css("border","1px solid #60d5ba");
+	}).mouseleave(function() {
+	     $(this).css("border", "1px solid transparent");
+	});
+
+
 	$(".container").click(function(){
-		$(".color_change_on_click").css({"background-color":"white","border":"none"});
+		$(".color_change_on_click").css("background-color","white");
 		$(".icon_color").css("background-color","white");
 		$(".container").css("background-color","white");
 	});
 	$("body").click(function(){
-		$(".color_change_on_click").css({"background-color":"white","border":"none"});
+		$(".color_change_on_click").css("background-color","white");
 		$(".icon_color").css("background-color","white");
 		$(".container").css("background-color","white");
 	});

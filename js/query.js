@@ -8,16 +8,27 @@ $(document).ready(function() {
 	    }
 	    $(this).css("overflow", "auto");        /* For the mozilla browser problem */
 	});
-
+	
 	$(document).on("click",".color_change_on_click",function(){
-		$(".color_change_on_click").css("background-color","#B2ECDD");
+		$(".color_change_on_click").css({"background-color":"#B2ECDD","border":"none"});
 		$(".icon_color").css("background-color","#B2ECDD");
+		$(".container").css("background-color","#B2ECDD");
 		$(".user_photo").css("opacity","0.2");
-		$(this).css("background-color","white");
+		$(this).css({"background-color":"white","border":"1px solid #B2ECDD"});
 		$(this).find("i").css("background-color","white");
 		$(this).find(".user_photo").css("opacity","10");
 	});
 
+	$(".container").click(function(){
+		$(".color_change_on_click").css({"background-color":"white","border":"none"});
+		$(".icon_color").css("background-color","white");
+		$(".container").css("background-color","white");
+	});
+	$("body").click(function(){
+		$(".color_change_on_click").css({"background-color":"white","border":"none"});
+		$(".icon_color").css("background-color","white");
+		$(".container").css("background-color","white");
+	});
 	$(document).on('click','.del_achivement',function(){
 		$("#"+$("#delete_div").val()).remove();
 	});
@@ -46,8 +57,7 @@ function deleteDivById(){
 
 	});
 }
-
-
+/*
 $(function(){
   var count = 2;
   $(document).on('click','#add_achivement',function(){
@@ -61,5 +71,46 @@ $(function(){
     });
     deleteDivById();
     count++;
+  });
+});
+*/
+$(function(){
+  var ac_count =ed_count=la_count=in_count =ex_couny= ed_count = 2;
+  $(document).on('click','#add_achivement',function(){
+  	var div_name = $("#delete_div").val();
+  	$(".color_change_on_click").css("background-color","#B2ECDD");
+  	$(".icon_color").css("background-color","#B2ECDD");
+  	if(div_name.indexOf('achivement_div')!= -1)
+  	{
+  		$('.achivement_main_div').append('<div id="achivement_div'+ac_count+'" class="input-group color_change_on_click" data-trigger="focus" data-toggle="popover"><i class="input-group-addon fa fa-trophy fa-2x icon_color" id="basic-addon1" aria-hidden="true"></i><textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea></div>');
+  		$('#achivement_div'+ac_count).popover({
+        placement : 'top',
+        html : true,
+        content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
+    });
+  		ac_count++;
+  	}
+  	else if(div_name.indexOf('education_div')!= -1)
+  	{
+  		$('.education_main_div').append('<div id="education_div'+ed_count+'" class="color_change_on_click"  data-trigger="focus" data-toggle="popover"><textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required ></textarea></div>');
+  		$('#education_div'+ed_count).popover({
+        placement : 'top',
+        html : true,
+        content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
+    });
+  		ed_count++;
+	}
+    else if(div_name.indexOf('languages_div')!= -1)
+  	{
+  		$('.languages_main_div').append('<div id="languages_div'+la_count+'" class="color_change_on_click"  data-trigger="focus" data-toggle="popover"><textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required ></textarea></div>');
+  		$('#languages_div'+la_count).popover({
+        placement : 'top',
+        html : true,
+        content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
+    });
+  		la_count++;
+	}
+    
+    deleteDivById();
   });
 });

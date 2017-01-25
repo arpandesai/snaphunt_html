@@ -7,13 +7,21 @@ body
 {
 	background-color: white;
 	margin-bottom:2%;
-	padding-left:0;
-	padding-right: 0; 
+	padding-left:50px;
+	padding-right: 50px; 
+	padding-top:50px;
+	padding-bottom: 50px;
 }
 .color_change_on_click
 {
 	padding-left:0;
 	padding-right:0;
+	border:1px solid white;
+}
+.color_change_on_click:hover
+{
+    border: 1px solid #60d5ba;
+    border-radius:5px;
 }
 .margin_lr_0
 {
@@ -24,6 +32,42 @@ hr
 {
 	margin-top:0!important;
 	margin-bottom:0!important;
+}
+.lnr 
+{
+	display: inline-block;
+	fill: currentColor;
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.05em;
+}
+.lnr-user,.lnr-flag,.lnr-text-format
+{
+	font-size: 20px!important;
+    margin-left: 5px;
+    margin-top: 11px;
+}
+.lnr-graduation-hat
+{
+	font-size: 30px!important;
+    margin-left: 5px;
+    margin-top: 8px;	
+}
+.lnr-star
+{	
+	font-size: 25px!important;
+    margin-left: 5px;
+    margin-top: 8px;	
+}
+.lnr-star-empty,.lnr-paperclip
+{
+	font-size: 15px!important;
+    margin-left: 9px;
+    margin-top: 8px;		
+}
+.col-md-1
+{
+	width:2%;
 }
 .user_photo
 {
@@ -39,6 +83,10 @@ hr
 	margin-left: 2%;
 	position: absolute;
 	top:40;
+}
+.user_name
+{
+	text-transform: uppercase;
 }
 .user_icon:hover
 {
@@ -109,8 +157,12 @@ hr
 /*resume_heading start*/
 .resume_heading
 {
-	font-size:25px;
+	font-size:20px;
 }
+.resume_detail
+{
+	padding-left:0.5%;
+} 
 .width100
 {
 	width:100%;
@@ -195,4 +247,8 @@ h2
 .clear
 {
 	clear: both;
+}
+::placeholder
+{
+	color:black!important;
 }

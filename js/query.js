@@ -89,7 +89,7 @@ $(function(){
   	$(".icon_color").css("background-color","#B2ECDD");
   	if(div_name.indexOf('achivement_div')!= -1)
   	{
-  		$('.achivement_main_div').append('<div id="achivement_div'+ac_count+'" class="input-group color_change_on_click" data-trigger="focus" data-toggle="popover"><i class="input-group-addon fa fa-trophy fa-2x icon_color" id="basic-addon1" aria-hidden="true"></i><textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea></div>');
+  		$('.achivement_main_div').append('<div id="achivement_div'+ac_count+'" class="input-group color_change_on_click width100" data-trigger="focus" data-toggle="popover"><div class="col-lg-1"><img src="svg/trophy.svg" class="trophy"/></div><div class="col-md-11"><textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea></div></div>');
   		$('#achivement_div'+ac_count).popover({
         placement : 'top',
         html : true,

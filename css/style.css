@@ -23,6 +23,18 @@ body
 	padding-left:0;
 	padding-right:0;
 }
+.padding_left0
+{
+	padding-left:0;
+}
+.padding_right0
+{
+	padding-right: 0;
+}
+.exp_div_col1
+{
+	width:7%;
+}
 hr
 {
 	margin-top:0!important;
@@ -181,12 +193,23 @@ hr
 {
 	box-shadow: none;
 }
+input:focus
+{
+	border-color: #ddd;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;	
+}
 .form-control:focus 
 {
     border-color: #ddd;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+.lnr-calendar-full:hover
+{
+	cursor:pointer;
 }
 /*resume_heading end*/
 
@@ -220,6 +243,10 @@ hr
 {
 	float: right;
 }
+.company_name
+{
+	font-weight:bold;
+}
 h2
 {
 	margin-top:10px!important;
@@ -237,6 +264,26 @@ h2
 {
 	width:40%;
 }
+.width20
+{
+	width:20%;
+}
+.width17
+{
+	width:17%;
+}
+.width32
+{
+	width:32%;
+}
+.width35
+{
+	width:35%;
+}
+.width16
+{
+	width:16%;
+}
 .icon_color
 {
 	color:#003e5a;
@@ -249,7 +296,18 @@ h2
 {
 	clear: both;
 }
-::placeholder
-{
-	color:black!important;
+textarea::-webkit-input-placeholder {
+color: black !important;
+}
+ 
+textarea:-moz-placeholder { /* Firefox 18- */
+color: black !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: black !important;  
+}
+ 
+textarea:-ms-input-placeholder {  
+color: black !important;  
 }

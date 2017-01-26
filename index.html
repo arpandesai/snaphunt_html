@@ -8,10 +8,16 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script type="text/javascript">
+	
+$( function() {
+    $('.datepicker').datepicker();
+    $('.lnr-calendar-full').datepicker();
+  } );</script>   
 </head>
 
-
-<body>
 	<div class="container">
 		<div class="col-lg-12 color_change_on_click">
 			<div class="col-lg-3" data-toggle="modal" data-target="#change_photo">
@@ -21,30 +27,30 @@
 
 			<div class="col-lg-6">
 				
-				<h2><textarea placeholder="YOUR NAME" class="form-control background_transparent width100px resume_heading fixed_textarea user_name" rows="1" required></textarea></h2>
+				<h2><textarea placeholder="YOUR NAME" class="form-control background_transparent width100px resume_heading fixed_textarea user_name" rows="1" required>vincent cleme</textarea></h2>
 				
-				<div class="input-group">
+				<div class="input-group width100">
 					<div class="col-lg-1">
 				  		<svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
 				  	</div>
-				  	<div class="col-lg-11">
-				  		<textarea placeholder="Your address" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+				  	<div class="col-lg-11 padding_left0">
+				  		<textarea placeholder="Your address" class="form-control background_transparent fixed_textarea padding_left0" rows="1" onkeydown="return limitLines(this, event)" required >4, leng kee road,#06-07 sis building singapore-159088</textarea>
 				  	</div>
 				</div>
-				<div class="input-group">
+				<div class="input-group width100">
 				  	<div class="col-lg-1">
 				  		<svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>
 				  	</div>
-				  	<div class="col-lg-11">
-				  		<textarea placeholder="Your phone" class="form-control background_transparent fixed_textarea" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required ></textarea>
+				  	<div class="col-lg-11 padding_left0">
+				  		<textarea placeholder="Your phone" class="form-control background_transparent fixed_textarea padding_left0" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required >+85255032830</textarea>
 				  	</div>
 				</div>
-				<div class="input-group">
+				<div class="input-group width100">
 				  	<div class="col-lg-1">
 				  		<svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
 				  	</div>
-				  	<div class="col-lg-11">
-				  		<textarea placeholder="Your e-mail" class="form-control background_transparent fixed_textarea" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required ></textarea>
+				  	<div class="col-lg-11 padding_left0">
+				  		<textarea placeholder="Your e-mail" class="form-control background_transparent fixed_textarea padding_left0" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required >vincentdeme@gmail.com</textarea>
 				  	</div>
 				</div>
 			</div>
@@ -65,10 +71,10 @@
 			<svg class="lnr lnr-user"><use xlink:href="#lnr-user"></use></svg>
 			</div>
 			<div class="col-md-11">
-				<textarea placeholder="Summary" class="form-control background_transparent fixed_textarea resume_heading" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required ></textarea>
+				<textarea placeholder="Summary" class="form-control background_transparent fixed_textarea resume_heading" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required >Summary</textarea>
 			</div>
 			<div class="col-md-12">
-				<textarea placeholder="Summary Details" class="form-control background_transparent resume_detail" rows="3" aria-describedby="basic-addon1" required></textarea>
+				<textarea placeholder="Summary Details" class="form-control background_transparent resume_detail" rows="3" aria-describedby="basic-addon1" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
 			</div>
 		</div>
 		
@@ -85,7 +91,7 @@
 					  	<svg class="lnr lnr-flag"><use xlink:href="#lnr-flag"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
-					  	<textarea placeholder="Achivements" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required ></textarea>
+					  	<textarea placeholder="Achievements" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required >Achievements</textarea>
 					  	</div>
 					</div>
 
@@ -94,7 +100,7 @@
 					  		<img src="svg/trophy.svg" class="trophy"/>
 					  	</div>
 					  	<div class="col-md-11">
-					  		<textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+					  		<textarea placeholder="Achievements Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </textarea>
 					  	</div>
 					</div>
 					<div class="input-group color_change_on_click width100" id="achivement_div1" data-trigger="focus" data-toggle="popover">
@@ -102,7 +108,7 @@
 					  		<img src="svg/trophy.svg" class="trophy"/>
 					  	</div>
 					  	<div class="col-md-11">
-					  		<textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+					  		<textarea placeholder="Achievements Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </textarea>
 					  	</div>
 					</div>
 				</div>
@@ -116,17 +122,39 @@
 					  	<svg class="lnr lnr-graduation-hat"><use xlink:href="#lnr-graduation-hat"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
-					  	<textarea placeholder="Education" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required ></textarea>
+					  	<textarea placeholder="Education" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required >Education</textarea>
 					  	</div>
 					</div>
 					<div class="color_change_on_click" id="education_div0"  data-trigger="focus" data-toggle="popover">
-						<textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required ></textarea>
+						<div class="float_left width60">
+							<textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required >master in computer applications</textarea>
+						</div>
+						<div class="width32 float_right">
+							<div class="input-group">
+							<input type="text" id="date1" name="testdate" class="form-control datepicker background_transparent" value="01/01/2004">
+						    <label class="input-group-addon padding_left0 background_transparent " for="date1">
+						       <svg class="lnr lnr-calendar-full"><use xlink:href="#lnr-calendar-full"></use></svg>
+						    </label>     
+						    </div>
+						</div>
+						<div class="clearfix"></div>
 					</div>
 					<div class="color_change_on_click" id="education_div1"  data-trigger="focus" data-toggle="popover">
-						<textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required ></textarea>
+						<div class="width60 float_left">
+							<textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required >bachlor in computer applications</textarea>
+						</div>
+						<div class="width32 float_right">
+							<div class="input-group">
+							<input type="text" id="date2" name="testdate" class="form-control datepicker background_transparent" value="01/01/2000">
+						    <label class="input-group-addon padding_left0 background_transparent " for="date2">
+						       <svg class="lnr lnr-calendar-full"><use xlink:href="#lnr-calendar-full"></use></svg>
+						    </label>     
+						    </div>
+						</div>
+						<div class="clearfix"></div>
 					</div>
+					
 				</div>
-
 
 				<hr/>
 
@@ -140,21 +168,21 @@
 					  	</div>
 					</div>
 					<div id="languages_div0" class="color_change_on_click" data-trigger="focus" data-toggle="popover">
-					<div class="float_left">
-						<textarea placeholder="Languages Details" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>	
-					</div>
-					<div class="float_right">
-						<textarea placeholder="Languages Level" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
-					</div>
+						<div class="float_left">
+							<textarea placeholder="Languages Details" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required >English</textarea>	
+						</div>
+						<div class="float_right">
+							<textarea placeholder="Languages Level" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required >Proficient</textarea>
+						</div>
 					<div class="clearfix"></div>
 					</div>
 
 					<div id="languages_div1" class="color_change_on_click" data-trigger="focus" data-toggle="popover">
 					<div class="float_left">
-						<textarea placeholder="Languages Details" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>	
+						<textarea placeholder="Languages Details" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required >Hindi</textarea>	
 					</div>
 					<div class="float_right">
-						<textarea placeholder="Languages Level" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+						<textarea placeholder="Languages Level" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required >Fluent</textarea>
 					</div>
 					<div class="clearfix"></div>
 					</div>
@@ -177,7 +205,7 @@
 					  		<svg class="lnr lnr-star-empty"><use xlink:href="#lnr-star-empty"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
-					  		<textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+					  		<textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</textarea>
 					  	</div>
 					</div>
 					<div class="input-group color_change_on_click width100">
@@ -185,7 +213,7 @@
 					  		<svg class="lnr lnr-star-empty"><use xlink:href="#lnr-star-empty"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
-					  		<textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea>
+					  		<textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</textarea>
 					  	</div>
 					</div>
 				</div>	
@@ -194,33 +222,38 @@
 			
 			<div class="col-lg-8 margin_lr_0">
 				<div class="experience_main_div" id="experience_div">
-				<div class="input-group color_change_on_click div_heading" id="achivement_heading" data-trigger="focus" data-toggle="popover">
-					<div class="col-lg-1">
+				<div class="input-group color_change_on_click div_heading width100" id="achivement_heading" data-trigger="focus" data-toggle="popover">
+					<div class="col-lg-1 exp_div_col1">
 				  	<svg class="lnr lnr-briefcase"><use xlink:href="#lnr-briefcase"></use></svg>
 				  	</div>
-				  	<div class="col-lg-11">
-				  	<textarea placeholder="Experience" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+				  	<div class="col-lg-11 padding_left0">
+				  	<textarea placeholder="Experience" class="form-control background_transparent fixed_textarea resume_heading width100 padding_left0" rows="1" onkeydown="return limitLines(this, event)" required >Experience</textarea>
 				  	</div>
 				</div>
 
 				<div id="experience_div0">
 				<div class="color_change_on_click">
-					<div class="float_left">
-						<textarea placeholder="Company Name" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+					<div class="float_left width60">
+						<textarea placeholder="Company Name" class="form-control background_transparent fixed_textarea company_name" rows="1" onkeydown="return limitLines(this, event)" required>Regional Distribution Manager Japan & Asia Pacific</textarea>
 					</div>
-					<div class="float_right">
-						<input type="month" class="form-control background_transparent">
-					</div>
-				<div class="clearfix"></div>
+					<div class="float_right width16">
+							<div class="input-group">
+							<input type="text" id="date3" name="testdate" class="form-control datepicker background_transparent" value="01/01/2000">
+						    <label class="input-group-addon padding_left0 background_transparent" for="date3">
+						       <svg class="lnr lnr-calendar-full"><use xlink:href="#lnr-calendar-full"></use></svg>
+						    </label>     
+						    </div>
+						</div>
+					<div class="clearfix"></div>
 				</div>
 				<div class="color_change_on_click">
-					<textarea placeholder="Company Address" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+					<textarea placeholder="Company Address" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required >safilo far east, Hong Kong</textarea>
 				</div>
 				<div class="color_change_on_click">
-					<textarea placeholder="Company Description" class="form-control background_transparent fixed_textarea" rows="4" required ></textarea>
+					<textarea placeholder="Company Description" class="form-control background_transparent fixed_textarea" rows="4" required >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
 				</div>
 				<div class="color_change_on_click">
-					<textarea placeholder="My Role" class="form-control background_transparent fixed_textarea" rows="4" required ></textarea>
+					<textarea placeholder="My Role" class="form-control background_transparent fixed_textarea" rows="4" required >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
 				</div>
 				</div>
 				</div>

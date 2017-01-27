@@ -8,14 +8,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-	 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<script type="text/javascript">
-	
-$( function() {
-    $('.datepicker').datepicker();
-    $('.lnr-calendar-full').datepicker();
-  } );</script>   
+	<script src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+  
 </head>
 
 	<div class="container">
@@ -30,24 +25,24 @@ $( function() {
 				<h2><textarea placeholder="YOUR NAME" class="form-control background_transparent width100px resume_heading fixed_textarea user_name" rows="1" required>vincent cleme</textarea></h2>
 				
 				<div class="input-group width100">
-					<div class="col-lg-1">
-				  		<svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
+					<div class="col-lg-1 icon_div">
+				  		<svg class="lnr lnr-map-marker icon_color heading_3_icons"><use xlink:href="#lnr-map-marker"></use></svg>
 				  	</div>
 				  	<div class="col-lg-11 padding_left0">
 				  		<textarea placeholder="Your address" class="form-control background_transparent fixed_textarea padding_left0" rows="1" onkeydown="return limitLines(this, event)" required >4, leng kee road,#06-07 sis building singapore-159088</textarea>
 				  	</div>
 				</div>
 				<div class="input-group width100">
-				  	<div class="col-lg-1">
-				  		<svg class="lnr lnr-phone-handset"><use xlink:href="#lnr-phone-handset"></use></svg>
+				  	<div class="col-lg-1 icon_div">
+				  		<svg class="lnr lnr-phone-handset icon_color heading_3_icons"><use xlink:href="#lnr-phone-handset"></use></svg>
 				  	</div>
 				  	<div class="col-lg-11 padding_left0">
 				  		<textarea placeholder="Your phone" class="form-control background_transparent fixed_textarea padding_left0" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required >+85255032830</textarea>
 				  	</div>
 				</div>
 				<div class="input-group width100">
-				  	<div class="col-lg-1">
-				  		<svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
+				  	<div class="col-lg-1 icon_div">
+				  		<svg class="lnr lnr-map-marker icon_color heading_3_icons"><use xlink:href="#lnr-map-marker"></use></svg>
 				  	</div>
 				  	<div class="col-lg-11 padding_left0">
 				  		<textarea placeholder="Your e-mail" class="form-control background_transparent fixed_textarea padding_left0" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required >vincentdeme@gmail.com</textarea>
@@ -68,10 +63,15 @@ $( function() {
 		<div class="col-lg-12 color_change_on_click">
 			
 			<div class="col-md-1">	
-			<svg class="lnr lnr-user"><use xlink:href="#lnr-user"></use></svg>
+			<svg class="lnr lnr-user icon_color"><use xlink:href="#lnr-user"></use></svg>
 			</div>
 			<div class="col-md-11">
-				<textarea placeholder="Summary" class="form-control background_transparent fixed_textarea resume_heading" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required >Summary</textarea>
+				<span class="float_left">
+					<textarea placeholder="Summary" class="form-control background_transparent fixed_textarea resume_heading" rows="1" aria-describedby="basic-addon1" onkeydown="return limitLines(this, event)" required >Summary</textarea>
+				</span>
+				<!--<span class="float_right">
+					<i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
+				</span> -->
 			</div>
 			<div class="col-md-12">
 				<textarea placeholder="Summary Details" class="form-control background_transparent resume_detail" rows="3" aria-describedby="basic-addon1" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
@@ -88,7 +88,7 @@ $( function() {
 				<div class="achivement_main_div" id="achivement_div">
 					<div class="input-group color_change_on_click div_heading width100" id="achivement_heading" data-trigger="focus" data-toggle="popover">
 					  	<div class="col-lg-1">
-					  	<svg class="lnr lnr-flag"><use xlink:href="#lnr-flag"></use></svg>
+					  	<svg class="lnr lnr-flag icon_color"><use xlink:href="#lnr-flag"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
 					  	<textarea placeholder="Achievements" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required >Achievements</textarea>
@@ -97,15 +97,16 @@ $( function() {
 
 					<div class="input-group color_change_on_click width100" id="achivement_div0" data-trigger="focus" data-toggle="popover">
 					  	<div class="col-lg-1">
-					  		<img src="svg/trophy.svg" class="trophy"/>
+					  		<i class="fa fa-trophy icon_color" aria-hidden="true"></i>
 					  	</div>
 					  	<div class="col-md-11">
 					  		<textarea placeholder="Achievements Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </textarea>
 					  	</div>
 					</div>
+
 					<div class="input-group color_change_on_click width100" id="achivement_div1" data-trigger="focus" data-toggle="popover">
 					  	<div class="col-lg-1">
-					  		<img src="svg/trophy.svg" class="trophy"/>
+					  		<i class="fa fa-trophy icon_color trophy" aria-hidden="true"></i>
 					  	</div>
 					  	<div class="col-md-11">
 					  		<textarea placeholder="Achievements Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </textarea>
@@ -119,7 +120,7 @@ $( function() {
 				<div class="education_main_div" id="education_div">
 					<div class="input-group color_change_on_click div_heading width100" id="education_heading" data-trigger="focus" data-toggle="popover">
 						<div class="col-lg-1">
-					  	<svg class="lnr lnr-graduation-hat"><use xlink:href="#lnr-graduation-hat"></use></svg>
+					  		<i class="fa fa-graduation-cap icon_color" aria-hidden="true"></i>
 					  	</div>
 					  	<div class="col-lg-11">
 					  	<textarea placeholder="Education" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required >Education</textarea>
@@ -131,9 +132,9 @@ $( function() {
 						</div>
 						<div class="width32 float_right">
 							<div class="input-group">
-							<input type="text" id="date1" name="testdate" class="form-control datepicker background_transparent" value="01/01/2004">
-						    <label class="input-group-addon padding_left0 background_transparent " for="date1">
-						       <svg class="lnr lnr-calendar-full"><use xlink:href="#lnr-calendar-full"></use></svg>
+							<input type="text" id="date0" name="testdate" class="form-control datepicker background_transparent" value="01/01/2004">
+						    <label class="input-group-addon padding_left0 background_transparent " for="date0">
+						       <svg class="lnr lnr-calendar-full icon_color"><use xlink:href="#lnr-calendar-full"></use></svg>
 						    </label>     
 						    </div>
 						</div>
@@ -145,9 +146,9 @@ $( function() {
 						</div>
 						<div class="width32 float_right">
 							<div class="input-group">
-							<input type="text" id="date2" name="testdate" class="form-control datepicker background_transparent" value="01/01/2000">
-						    <label class="input-group-addon padding_left0 background_transparent " for="date2">
-						       <svg class="lnr lnr-calendar-full"><use xlink:href="#lnr-calendar-full"></use></svg>
+							<input type="text" id="date1" name="testdate" class="form-control datepicker background_transparent" value="01/01/2000">
+						    <label class="input-group-addon padding_left0 background_transparent " for="date1">
+						       <svg class="lnr lnr-calendar-full icon_color"><use xlink:href="#lnr-calendar-full"></use></svg>
 						    </label>     
 						    </div>
 						</div>
@@ -161,10 +162,10 @@ $( function() {
 				<div class="languages_main_div" id="languages_div">
 					<div class="input-group color_change_on_click div_heading width100" id="achivement_heading" data-trigger="focus" data-toggle="popover">
 						<div class="col-lg-1">
-					  		<svg class="lnr lnr-text-format"><use xlink:href="#lnr-text-format"></use></svg>
+					  		<svg class="lnr lnr-text-format icon_color"><use xlink:href="#lnr-text-format"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
-					  		<textarea placeholder="Languages" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required ></textarea>
+					  		<textarea placeholder="Languages" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)"required >Languages</textarea>
 					  	</div>
 					</div>
 					<div id="languages_div0" class="color_change_on_click" data-trigger="focus" data-toggle="popover">
@@ -194,23 +195,23 @@ $( function() {
 				<div class="interests_main_div" id="interests_div">
 					<div class="input-group color_change_on_click div_heading width100" id="achivement_heading" data-trigger="focus" data-toggle="popover">
 						<div class="col-lg-1">
-					  	<svg class="lnr lnr-star"><use xlink:href="#lnr-star"></use></svg>
+					  	<svg class="lnr lnr-star icon_color"><use xlink:href="#lnr-star"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
-					  	<textarea placeholder="Interests" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)" required ></textarea>
+					  	<textarea placeholder="Interests" class="form-control background_transparent fixed_textarea resume_heading" rows="1" onkeydown="return limitLines(this, event)" required >Interests</textarea>
 					  	</div>
 					</div>
-					<div class="input-group color_change_on_click width100">
+					<div id="interests_div0" class="input-group color_change_on_click width100" data-trigger="focus" data-toggle="popover">
 					  	<div class="col-lg-1">
-					  		<svg class="lnr lnr-star-empty"><use xlink:href="#lnr-star-empty"></use></svg>
+					  		<svg class="lnr lnr-star-empty icon_color"><use xlink:href="#lnr-star-empty"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
 					  		<textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</textarea>
 					  	</div>
 					</div>
-					<div class="input-group color_change_on_click width100">
+					<div id="interests_div1" class="input-group color_change_on_click width100" data-trigger="focus" data-toggle="popover">
 					  	<div class="col-lg-1">
-					  		<svg class="lnr lnr-star-empty"><use xlink:href="#lnr-star-empty"></use></svg>
+					  		<svg class="lnr lnr-star-empty icon_color"><use xlink:href="#lnr-star-empty"></use></svg>
 					  	</div>
 					  	<div class="col-lg-11">
 					  		<textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</textarea>
@@ -224,7 +225,7 @@ $( function() {
 				<div class="experience_main_div" id="experience_div">
 				<div class="input-group color_change_on_click div_heading width100" id="achivement_heading" data-trigger="focus" data-toggle="popover">
 					<div class="col-lg-1 exp_div_col1">
-				  	<svg class="lnr lnr-briefcase"><use xlink:href="#lnr-briefcase"></use></svg>
+				  	<svg class="lnr lnr-briefcase icon_color"><use xlink:href="#lnr-briefcase"></use></svg>
 				  	</div>
 				  	<div class="col-lg-11 padding_left0">
 				  	<textarea placeholder="Experience" class="form-control background_transparent fixed_textarea resume_heading width100 padding_left0" rows="1" onkeydown="return limitLines(this, event)" required >Experience</textarea>
@@ -240,7 +241,7 @@ $( function() {
 							<div class="input-group">
 							<input type="text" id="date3" name="testdate" class="form-control datepicker background_transparent" value="01/01/2000">
 						    <label class="input-group-addon padding_left0 background_transparent" for="date3">
-						       <svg class="lnr lnr-calendar-full"><use xlink:href="#lnr-calendar-full"></use></svg>
+						       <svg class="lnr lnr-calendar-full icon_color"><use xlink:href="#lnr-calendar-full"></use></svg>
 						    </label>     
 						    </div>
 						</div>

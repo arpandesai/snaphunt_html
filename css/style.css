@@ -1,16 +1,17 @@
 body
 {
 	margin-top:2%;
-	background-color:#00c091;
+	background-color:white;
 }
 .container
 {
-	background-color: white;
 	margin-bottom:2%;
 	padding-left:50px;
 	padding-right: 50px; 
 	padding-top:50px;
 	padding-bottom: 50px;
+	-webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 20px #000;
 }
 .color_change_on_click
 {
@@ -30,6 +31,14 @@ body
 .padding_right0
 {
 	padding-right: 0;
+}
+.heading_3_icons
+{
+	margin-left:0!important;
+}
+.icon_div
+{
+	width:6%;
 }
 .exp_div_col1
 {
@@ -54,11 +63,23 @@ hr
     margin-left: 5px;
     margin-top: 11px;
 }
-.lnr-graduation-hat
+.lnr-text-format
 {
-	font-size: 30px!important;
-    margin-left: 5px;
-    margin-top: 8px;	
+	margin-top:15px;
+}
+.lnr-star-empty
+{
+	margin-top:19px!important;
+}
+.fa-graduation-cap,.fa-trash-o
+{
+	padding-top:12px;
+	font-size:25px!important;
+}
+.fa-trophy 
+{
+    padding-top: 20px;
+    padding-left: 5;
 }
 .lnr-star
 {	
@@ -170,7 +191,9 @@ hr
 /*resume_heading start*/
 .resume_heading
 {
-	font-size:20px;
+	font-size:23px;
+	color: #003e5a;
+	font-weight:bold;
 }
 .resume_detail
 {
@@ -297,17 +320,17 @@ h2
 	clear: both;
 }
 textarea::-webkit-input-placeholder {
-color: black !important;
+color: #003e5a !important;
 }
  
 textarea:-moz-placeholder { /* Firefox 18- */
-color: black !important;  
+color: #003e5a !important;  
 }
  
 textarea::-moz-placeholder {  /* Firefox 19+ */
-color: black !important;  
+color: #003e5a !important;  
 }
  
 textarea:-ms-input-placeholder {  
-color: black !important;  
+color: #003e5a !important;  
 }

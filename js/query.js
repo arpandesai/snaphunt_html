@@ -10,17 +10,17 @@ $(document).ready(function() {
 	});
 	
 	$(document).on("click",".color_change_on_click",function(){
-		$(".color_change_on_click").css("background-color","#B2ECDD");
-		$(".icon_color").css("background-color","#B2ECDD");
-		$(".container").css("background-color","#B2ECDD");
+		$(".color_change_on_click").css("background-color","lightgray");
+		$(".icon_color").css("background-color","lightgray");
+		$(".container").css("background-color","lightgray");
 		$(".user_photo").css("opacity","0.2");
 		$(this).css("background-color","white");
-		$(this).find("i").css("background-color","white");
+		$(this).find(".icon_color").css("background-color","white");
 		$(this).find(".user_photo").css("opacity","10");
 	});
 
 	$(".color_change_on_click").mouseenter(function() {
-	    $(this).css("border","1px solid #60d5ba");
+	    $(this).css("border","1px solid darkgray");
 	}).mouseleave(function() {
 	     $(this).css("border", "1px solid transparent");
 	});
@@ -64,60 +64,59 @@ function deleteDivById(){
 
 	});
 }
-/*
-$(function(){
-  var count = 2;
-  $(document).on('click','#add_achivement',function(){
-  	$(".color_change_on_click").css("background-color","#B2ECDD");
-  	$(".icon_color").css("background-color","#B2ECDD");
-    $('.achivement_main_div').append('<div id="achivement_div'+count+'" class="input-group color_change_on_click" data-trigger="focus" data-toggle="popover"><i class="input-group-addon fa fa-trophy fa-2x icon_color" id="basic-addon1" aria-hidden="true"></i><textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea></div>');
-    $('#achivement_div'+count).popover({
-        placement : 'top',
-        html : true,
-        content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
-    });
-    deleteDivById();
-    count++;
-  });
-});
-*/
+
 $(function(){
   var ac_count =ed_count=la_count=in_count =ex_couny= ed_count = 2;
   $(document).on('click','#add_achivement',function(){
   	var div_name = $("#delete_div").val();
-  	$(".color_change_on_click").css("background-color","#B2ECDD");
-  	$(".icon_color").css("background-color","#B2ECDD");
+  	$(".color_change_on_click").css("background-color","lightgray");
+  	$(".icon_color").css("background-color","lightgray");
   	if(div_name.indexOf('achivement_div')!= -1)
   	{
-  		$('.achivement_main_div').append('<div id="achivement_div'+ac_count+'" class="input-group color_change_on_click width100" data-trigger="focus" data-toggle="popover"><div class="col-lg-1"><img src="svg/trophy.svg" class="trophy"/></div><div class="col-md-11"><textarea placeholder="Achivements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea></div></div>');
+  		$('.achivement_main_div').append('<div class="input-group color_change_on_click width100" id="achivement_div'+ac_count+'" data-trigger="focus" data-toggle="popover"><div class="col-lg-1"><img src="svg/trophy.svg" class="trophy"/></div><div class="col-md-11"><textarea placeholder="Achievements Details" class="form-control background_transparent fixed_textarea" rows="2" required ></textarea></div></div>');
+  										  		
   		$('#achivement_div'+ac_count).popover({
         placement : 'top',
         html : true,
         content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
-    });
+      });
   		ac_count++;
   	}
   	else if(div_name.indexOf('education_div')!= -1)
   	{
-  		$('.education_main_div').append('<div id="education_div'+ed_count+'" class="color_change_on_click"  data-trigger="focus" data-toggle="popover"><textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required ></textarea></div>');
+  		$('.education_main_div').append('<div id="education_div'+ed_count+'" class="color_change_on_click"  data-trigger="focus" data-toggle="popover"><div class="float_left width60"><textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required ></textarea></div><div class="width32 float_right"><div class="input-group"><input type="text" id="date'+ed_count+'" name="testdate" class="form-control datepicker background_transparent" value="" placeholder="date"><label class="input-group-addon padding_left0 background_transparent " for="date'+ed_count+'"><svg class="lnr lnr-calendar-full"><use xlink:href="#lnr-calendar-full"></use></svg></label></div></div><div class="clearfix"></div>');
   		$('#education_div'+ed_count).popover({
         placement : 'top',
         html : true,
         content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
-    });
+      });
   		ed_count++;
-	}
+	  }
     else if(div_name.indexOf('languages_div')!= -1)
   	{
-  		$('.languages_main_div').append('<div id="languages_div'+la_count+'" class="color_change_on_click"  data-trigger="focus" data-toggle="popover"><textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education Details" required ></textarea></div>');
-  		$('#languages_div'+la_count).popover({
+  		$('.languages_main_div').append('<div id="languages_div'+la_count+'" class="color_change_on_click"  data-trigger="focus" data-toggle="popover"><div class="float_left"><textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Language Details" required ></textarea></div><div class="float_right"><textarea placeholder="Languages Level" class="form-control background_transparent fixed_textarea" rows="1" onkeydown="return limitLines(this, event)" required ></textarea></div><div class="clearfix"></div></div> ');
+      $('#languages_div'+la_count).popover({
         placement : 'top',
         html : true,
         content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
-    });
+      });
   		la_count++;
-	}
-    
+	  }
+    else if(div_name.indexOf('interests_div')!= -1)
+    {
+      $('.interests_main_div').append('<div id="interests_div'+in_count+'" class="color_change_on_click"  data-trigger="focus" data-toggle="popover"><div class="col-lg-1"><svg class="lnr lnr-star-empty"><use xlink:href="#lnr-star-empty"></use></svg></div><div class="col-lg-11"><textarea placeholder="Interests Details" class="form-control background_transparent fixed_textarea" rows="2" required >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</textarea></div></div>');       
+      $('#interests_div'+in_count).popover({
+        placement : 'top',
+        html : true,
+        content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
+      });
+      in_count++;
+    }
     deleteDivById();
   });
 });
+
+$( function() {
+    $('.datepicker').datepicker();
+    $('.lnr-calendar-full').datepicker();
+  } );

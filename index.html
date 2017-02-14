@@ -10,9 +10,22 @@
 	<link rel="stylesheet" href="css/side_menu.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/picker.css">
+	<script language="javascript" type="text/javascript">
+		function capitaliseName()
+		{
+		    var str = document.getElementById("captext").value;
+		    document.getElementById("captext").value = str.charAt(0).toUpperCase() + str.slice(1);
+		}
+
+		$(document).ready(function(){
+			
+		});
+	</script>
+
+
 </head>
-
-
+	
+	<!-- <span onclick="openNav()" class="side_menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
 	<div id="mySidenav" class="sidenav">
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   		<span id="addAchi" class="sidemenu">Add Achivement</span>
@@ -21,48 +34,132 @@
   		<span id="addInte" class="sidemenu">Add Interests</span>
   		<span id="addExpe" class="sidemenu">Add Experience</span>
   		<span id="color" class="sidemenu"data-toggle="modal" data-target="#change_heading_color">Color</span>
+	</div> -->
+		
+	<div class="top_full">
+		<ul class="container top_container">
+			<li class="col-lg-2 col-md-3 main_div_5type">
+				<span class="template active_top"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"><span class="top_icon_text">Template</span></i></span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_5type">
+				<span class="add_section"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"><span class="top_icon_text">Add Section</span></i></span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_5type">
+				<span class="fonts"><i class="fa fa-font fa-2x" aria-hidden="true"><span class="top_icon_text">Font</span></i></span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_5type">
+				<span class="color_span"><i class="fa fa-toggle-off fa-2x" aria-hidden="true"><span class="top_icon_text">Color</span></i>
+				</span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_5type">
+				<span class="edit"><i class="fa fa-arrows fa-2x" aria-hidden="true"><span class="top_icon_text">Edit</span></i></span>
+			</li>
+		</ul>
 	</div>
+	
+	<div class="top_full2">
+		<div class="container top_container2 template_div">
+			<div class="col-lg-3 col-md-3 main_div_4type">
+				<span class=""><a href="index.html">Template 1</a></span>
+			</div>
+			<div class="col-lg-3 col-md-3 main_div_4type">
+				<span class=""><a href="snap_60_40.html">Template 2</a></span>
+			</div>
+			<div class="col-lg-3 col-md-3 main_div_4type">
+				<span class=""><a href="snapfull.html">Template 3</a></span>
+			</div>
+		</div>
+		
+		<ul class="container top_container2 section_div">
+			<li class="main_div_4type">
+				<span class="sidemenu" id="addAchi">Achivement</span>
+			</li>
+			<li class="main_div_4type">
+				<span class="sidemenu" id="addEduc">Education</span>
+			</li>
+			<li class="main_div_4type">
+				<span class="sidemenu" id="addLang">Language</span>
+			</li>
+			<li class="main_div_4type">
+				<span class="sidemenu" id="addInte">Interests</span>
+			</li>
+			<li class="main_div_4type">
+				<span class="sidemenu" id="addExpe">Experience</span>
+			</li>
+		</ul>
 
-<!-- Use any element to open the sidenav -->
-<span onclick="openNav()" class="side_menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+		<div class="container top_container2 font_div">
+			<div class="col-lg-3 col-md-3 main_div_4type">
+				<span class="">Font1</span>
+			</div>
+			<div class="col-lg-3 col-md-3 main_div_4type">
+				<span class="">Font2</span>
+			</div>
+			<div class="col-lg-3 col-md-3 main_div_4type">
+				<span class="">Font3</span>
+			</div>
+			<div class="col-lg-3 col-md-3 main_div_4type">
+				<span class="">Font4</span>
+			</div>
+		</div>
+		<ul class="container top_container2 color_div">
+			<li class="col-lg-2 col-md-3 main_div_4type">
+				<span class="color" id="c_9933cc">color</span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_4type">
+				<span class="color" id="c_333366">color</span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_4type">
+				<span class="color" id="c_ff3366">color</span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_4type">
+				<span class="color" id="c_0099ff">color</span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_4type">
+				<span class="color" id="c_ff6633">color</span>
+			</li>
+			<li class="col-lg-2 col-md-3 main_div_4type">
+				<span class="color" id="c_003e5a">Default</span>
+			</li>
 
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-<script language="javascript" type="text/javascript">
-function capitaliseName()
-{
-    var str = document.getElementById("captext").value;
-    document.getElementById("captext").value = str.charAt(0).toUpperCase() + str.slice(1);
-}
-</script>
-
+		</ul>
+	</div>
+	
 	<div class="container">
-		<div class="col-lg-12 color_change_on_click">
-			<div class="col-lg-2" data-toggle="modal" data-target="#change_photo">
-				<img class="img-circle user_photo" src="user.png" style="position:relative;" />
-				<!--<i class="fa fa-retweet fa-2x user_icon icon_color"></i>-->
+		<div class="col-lg-12 col-md-12 col-sm-12 color_change_on_click">
+			<div class="col-lg-2 col-md-2 col-sm-2" data-toggle="modal" data-target="#change_photo">
+				<img id="u_photo"  class="img-circle user_photo" src="user.png" style="position:relative;" />
 			</div>
+			<i class="fa fa-retweet fa-2x user_icon icon_color"></i>
 
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-6 col-sm-6">
 				
-				<h2><textarea placeholder="vincent cleme" class="form-control background_transparent width100px resume_heading fixed_textarea user_name" rows="1" required></textarea></h2>
+				<h2><textarea placeholder="Amy Lin" class="form-control ex_textarea background_transparent width100px resume_heading fixed_textarea user_name" rows="1" required></textarea></h2>
+				
+				<div class="perinfo_main_div" id="personal_div">
+				
+					<div class="input-group">
+					  	<span class="input-group-addon exper_add ex_textarea"><i class="fa fa-map-marker paddding_right5" aria-hidden="true"></i></span>
+						<textarea placeholder="4, leng kee road,#06-07 sis building singapore-159088" class="ex_textarea form-control background_transparent fixed_textarea padding_left0"  id="captext" rows="1" onkeydown = "capitaliseName()" required></textarea>
+					</div>
 
-				<div class="input-group">
-					<span class="input-group-addon padding_top0 paddding_right5"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-    				<textarea rows="1" placeholder="4, leng kee road,#06-07 sis building singapore-159088" class="form-control background_transparent fixed_textarea padding_left0 padding_top0" id="captext" onkeydown = "capitaliseName()"></textarea>     
-				</div>
+					<div class="input-group">
+						<span class="input-group-addon exper_add ex_textarea"><i class="fa fa-phone paddding_right5" aria-hidden="true"></i></span>
+						<textarea rows="1" placeholder="+85255032830" class="ex_textarea form-control background_transparent fixed_textarea padding_left0"></textarea>     
+					</div>
 
-				<div class="input-group">
-					<span class="input-group-addon padding_top0 paddding_right5"><i class="fa fa-phone" aria-hidden="true"></i></span>
-    				<textarea rows="1" placeholder="+85255032830" class="form-control background_transparent fixed_textarea padding_left0 padding_top0" id="captext" onkeydown = "capitaliseName()"></textarea>     
+					<div class="input-group">
+						<span class="input-group-addon exper_add ex_textarea"><i class="fa fa-at paddding_right5" aria-hidden="true"></i></span>
+						<textarea placeholder="vincentdeme@gmail.com" class="ex_textarea form-control background_transparent fixed_textarea padding_left0 padding_top0" rows="1" required id="captext" onkeydown = "capitaliseName()"></textarea>
+					</div>
+					<!--<div class="float_right">
+						<span class="padding_top0 paddding_right5"><i class="fa fa-plus" id="add_new_pi" aria-hidden="true"></i></span>
+					</div> -->
 				</div>
-
-				<div class="input-group">
-				  	<span class="input-group-addon padding_top0 paddding_right5"><i class="fa fa-at" aria-hidden="true"></i></span>
-					<textarea placeholder="vincentdeme@gmail.com" class="form-control background_transparent fixed_textarea padding_left0 padding_top0" rows="1" required id="captext" onkeydown = "capitaliseName()"></textarea>
-				</div>
+				
 			</div>
 
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-3 col-sm-3">
 
 			</div>
 		</div>		
@@ -72,23 +169,24 @@ function capitaliseName()
 		<hr/>
 		<div class="clear"></div>
 
-		<div class="col-lg-12 color_change_on_click">
+		<div class="col-lg-12 col-md-12 col-sm-12 color_change_on_click">
 
 			<div class="padding_left1">
 				<span style="width:1%" class="float_left">	
 					<i class="fa fa-user-o icon_color fa-2x" aria-hidden="true"></i>
+					<!--<img src="Icons/user.svg"/ style="height: 18px;width: 24px;top: 14;position: relative;" class="icon_color user_icon">-->
 				</span>
 				<span style="width:98%" class="float_left padding_left1">
 					<span class="float_left">
-						<textarea placeholder="Summary" class="padding_left1 form-control background_transparent fixed_textarea resume_heading" rows="1" aria-describedby="basic-addon1" required id="captext" onkeydown = "capitaliseName()"></textarea>
+						<textarea placeholder="Summary" class="padding_left1 ex_textarea form-control background_transparent fixed_textarea resume_heading" rows="1" aria-describedby="basic-addon1" required id="captext" onkeydown = "capitaliseName()"></textarea>
 					</span>
 					<span class="float_right delete_icon">
 						<i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
 					</span>
 				</span>
 			</div>
-			<div class="col-md-12">
-				<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="form-control background_transparent resume_detail padding_top0" rows="3" aria-describedby="basic-addon1" id="captext" onkeydown = "capitaliseName()" required></textarea>
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="form-control background_transparent resume_detail padding_top0 summery_textarea summery_padding_left1" rows="3" aria-describedby="basic-addon1" id="captext" onkeydown = "capitaliseName()" required></textarea>
 			</div>
 		</div>
 		
@@ -97,26 +195,48 @@ function capitaliseName()
 		<div class="clear"></div>
 
 				
-		<div class="col-lg-12">
-			<div class="col-lg-4 border_right add_newdiv">
-			
-				<div class="achivement_main_div" id="achivement_div">
+		<div class="col-lg-12 col-md-12 col-sm-12 padding_left0">
+			<div class="col-lg-4 col-md-4 col-sm-12 border_right add_newdiv padding_left0">
 				
+				<div class="achivement_main_div" id="achivement_div">
 					<div class="input-group color_change_on_click div_heading" id="achivement_heading" data-trigger="focus" data-toggle="popover">
+					
 					<span class="input-group-addon"><i class="fa fa-flag-o icon_color fa-2x" aria-hidden="true"></i></span>
-    				<textarea rows="1" placeholder="Achivement" class="form-control background_transparent fixed_textarea resume_heading padding_left0" id="captext" onkeydown = "capitaliseName()"></textarea>     
+    				<textarea rows="1" placeholder="Achivement" class="form-control ex_textarea background_transparent fixed_textarea resume_heading padding_left0" id="captext" onkeydown = "capitaliseName()"></textarea>     
 					</div>
-
-					<div class="input-group color_change_on_click width100" id="achivement_div0" data-trigger="focus" data-toggle="popover">
-						<span class="input-group-addon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-    					<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="form-control background_transparent fixed_textarea textarea_with_icon" id="captext" onkeydown = "capitaliseName()"></textarea>     
+					
+					<div class="input-group color_change_on_click width100" id="achivement_div0">
+						
+						<div class="popover_new" style="display:none;">
+							<ul class="popover_ul">
+								<li class="popover_li">
+									<i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+								</li>
+								<li class="popover_li">
+									<i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+								</li>
+								<li class="popover_li">
+									<i class="fa fa-calendar fa-lg" aria-hidden="true"></i>
+								</li>
+								<li class="popover_li popover_li_text">
+									Example
+								</li>
+							</ul>
+						</div>						
+	
+						
+						<span class="input-group-addon">
+							<button class="fa fa-trophy" aria-hidden="true" role="iconpicker" style="border:none;background-color:transparent;padding:3;"></button>
+						</span>
+						<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="ex_textarea form-control background_transparent fixed_textarea textarea_with_icon resume_detail" id="captext" onkeydown = "capitaliseName()"></textarea>     
 					</div>
 
 					<hr class="div_single_border"/>
 
 					<div class="input-group color_change_on_click width100" id="achivement_div1" data-trigger="focus" data-toggle="popover">
+						
 						<span class="input-group-addon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-    					<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="form-control background_transparent fixed_textarea textarea_with_icon" id="captext" onkeydown = "capitaliseName()"></textarea>     
+    					<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="ex_textarea form-control background_transparent fixed_textarea textarea_with_icon resume_detail" id="captext" onkeydown = "capitaliseName()"></textarea>     
 					</div>
 
 					<hr class="div_single_border"/>
@@ -130,20 +250,24 @@ function capitaliseName()
 
 					<div class="input-group color_change_on_click div_heading" id="education_heading" data-trigger="focus" data-toggle="popover">
 						<span class="input-group-addon"><i class="fa fa-graduation-cap icon_color fa-2x" aria-hidden="true"></i></span>
-    					<textarea rows="1" placeholder="Education" class="form-control background_transparent fixed_textarea resume_heading padding_left0" id="captext" onkeydown = "capitaliseName()"></textarea>     
+    					<textarea rows="1" placeholder="Education" class="form-control ex_textarea background_transparent fixed_textarea resume_heading padding_left0" id="captext" onkeydown = "capitaliseName()"></textarea>     
 					</div>					
 
 					<div class="color_change_on_click" id="education_div0"  data-trigger="focus" data-toggle="popover">
-						<div class="float_left width55">
-							<textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="master in computer applications" required ></textarea>
+						<div>
+							<textarea class="resume_sub_detail form-control background_transparent fixed_textarea edu_name padding_tb_0" rows="1" placeholder="master in computer applications" required ></textarea>
+							<div class="input-group">
+							  	<span class="ex_textarea input-group-addon exper_add edu_icons"><i class="fa fa-map-marker padding_left0" aria-hidden="true"></i></span>
+								<textarea placeholder="abc place" class="resume_detail ex_textarea form-control background_transparent fixed_textarea" rows="1" required></textarea>
+							</div>
 						</div>
-						<div class="width45 float_right">
+						<div class="width14">
 						    <div class="input-group selectMonths">
-								<input type="text" class="customdatepicker customdatepickerleft form-control datepicker background_transparent"  placeholder="01/2017 - 02/2017" value="" readonly >
-							    <label class="input-group-addon padding_left0 background_transparent">
+								<label class="padding_tb_0 input-group-addon background_transparent edu_icons">
 							       <i class="fa fa-calendar calendar_icon" aria-hidden="true"></i>
 							    </label>     
-						    </div>
+								<textarea type="text" class="date_font padding_left0 customdatepicker customdatepickerleft datepicker ex_textarea form-control background_transparent fixed_textarea"  placeholder="01/2017 - 02/2017" value="" rows="1" readonly ></textarea>
+							</div>
 
 						</div>
 						<div class="clearfix"></div>
@@ -152,16 +276,21 @@ function capitaliseName()
 					<hr class="div_single_border"/>
 
 					<div class="color_change_on_click" id="education_div1"  data-trigger="focus" data-toggle="popover">
-						<div class="width55 float_left">
-							<textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="bachlor in computer applications" required ></textarea>
+						<div>
+							<textarea class="resume_sub_detail form-control background_transparent fixed_textarea edu_name padding_tb_0" rows="1" placeholder="master in computer applications" required ></textarea>
+							<div class="input-group">
+							  	<span class="ex_textarea input-group-addon exper_add edu_icons"><i class="fa fa-map-marker padding_left0" aria-hidden="true"></i></span>
+								<textarea placeholder="abc place" class="resume_detail ex_textarea form-control background_transparent fixed_textarea" rows="1" required></textarea>
+							</div>
 						</div>
-						<div class="width45 float_right">
-							<div class="input-group selectMonths">
-								<input type="text" class="customdatepicker customdatepickerleft form-control datepicker background_transparent"  placeholder="01/2017 - 02/2017" value="" readonly >
-							    <label class="input-group-addon padding_left0 background_transparent">
+						<div class="width14">
+						    <div class="input-group selectMonths">
+								<label class="padding_tb_0 input-group-addon background_transparent edu_icons">
 							       <i class="fa fa-calendar calendar_icon" aria-hidden="true"></i>
 							    </label>     
-						    </div>
+								<textarea type="text" class="date_font padding_left0 customdatepicker customdatepickerleft datepicker ex_textarea form-control background_transparent fixed_textarea"  placeholder="01/2017 - 02/2017" value="" rows="1" readonly ></textarea>
+							</div>
+
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -175,25 +304,25 @@ function capitaliseName()
 
 					<div class="input-group color_change_on_click div_heading" id="languages_heading" data-trigger="focus" data-toggle="popover">
 						<span class="input-group-addon"><i class="fa fa-language icon_color fa-2x" aria-hidden="true"></i></span>
-    					<textarea rows="1" placeholder="Languages" class="form-control background_transparent fixed_textarea resume_heading padding_left0"></textarea>     
+    					<textarea rows="1" placeholder="Languages" class="form-control ex_textarea background_transparent fixed_textarea resume_heading padding_left0"></textarea>     
 					</div>	
 
 					<div id="languages_div0" class="color_change_on_click" data-trigger="focus" data-toggle="popover">
 						<div class="float_left width50">
-							<textarea placeholder="English" class="form-control background_transparent fixed_textarea" rows="1" required ></textarea>	
+							<textarea placeholder="Language1" class="resume_sub_detail form-control background_transparent fixed_textarea" rows="1" required ></textarea>	
 						</div>
 						<div class="float_right width50">
-							<textarea placeholder="Proficient" class="form-control background_transparent fixed_textarea" rows="1" required ></textarea>
+							<textarea placeholder="Proficient" class="resume_detail form-control background_transparent fixed_textarea" rows="1" required ></textarea>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<hr class="div_single_border"/>
 					<div id="languages_div1" class="color_change_on_click" data-trigger="focus" data-toggle="popover">
 						<div class="float_left width50">
-							<textarea placeholder="Hindi" class="form-control background_transparent fixed_textarea" rows="1" required ></textarea>	
+							<textarea placeholder="Language2" class="resume_sub_detail form-control background_transparent fixed_textarea" rows="1" required ></textarea>	
 						</div>
 						<div class="float_right width50">
-							<textarea placeholder="Fluent" class="form-control background_transparent fixed_textarea" rows="1" required ></textarea>
+							<textarea placeholder="Fluent" class="resume_detail form-control background_transparent fixed_textarea" rows="1" required ></textarea>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -207,19 +336,32 @@ function capitaliseName()
 
 					<div class="input-group color_change_on_click div_heading" id="interests_heading" data-trigger="focus" data-toggle="popover">
 						<span class="input-group-addon"><i class="fa fa-star-o icon_color fa-2x" aria-hidden="true"></i></span>
-	    				<textarea rows="1" placeholder="Interests" class="form-control background_transparent fixed_textarea resume_heading padding_left0"></textarea>     
+	    				<textarea rows="1" placeholder="Interests" class="form-control ex_textarea background_transparent fixed_textarea resume_heading padding_left0"></textarea>     
 					</div>
 
-					<div class="input-group color_change_on_click width100" id="interests_div0" data-trigger="focus" data-toggle="popover">
-						<span class="input-group-addon"><i class="fa fa-star" aria-hidden="true"></i></span>
-						<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
-					</div>
+					<div class="color_change_on_click width100" id="interests_div0" data-trigger="focus" data-toggle="popover">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-star" aria-hidden="true"></i></span>
+							<input placeholder="Interest1" class="resume_sub_detail form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
+						</div>
+											
+						<span class="">
+							<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="padding_top0 resume_detail inte_detail_sub form-control background_transparent fixed_textarea"></textarea>
+						</span>
+					</div>	
+					
 
 					<hr class="div_single_border"/>
 
 					<div class="input-group color_change_on_click width100" id="interests_div1" data-trigger="focus" data-toggle="popover">
-						<span class="input-group-addon"><i class="fa fa-star" aria-hidden="true"></i></span>
-						<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-star" aria-hidden="true"></i></span>
+							<input placeholder="Interest2" class="resume_sub_detail form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
+						</div>
+											
+						<span class="">
+							<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="padding_top0 resume_detail inte_detail_sub form-control background_transparent fixed_textarea"></textarea>
+						</span>     
 					</div>
 
 					<hr class="div_single_border"/>
@@ -227,7 +369,7 @@ function capitaliseName()
 			</div>
 
 			
-			<div class="col-lg-8 add_newdivExpe">
+			<div class="col-lg-8 col-md-8 col-sm-12 add_newdivExpe">
 
 
 
@@ -235,38 +377,51 @@ function capitaliseName()
 
 					<div class="input-group color_change_on_click div_heading" id="experience_heading" data-trigger="focus" data-toggle="popover">
 						<span class="input-group-addon"><i class="fa fa-briefcase icon_color fa-2x" aria-hidden="true"></i></span>
-    					<textarea rows="1" placeholder="Experience" class="form-control background_transparent fixed_textarea resume_heading padding_left0"></textarea>     
+    					<textarea rows="1" placeholder="Experience" class="form-control ex_textarea background_transparent fixed_textarea resume_heading padding_left0"></textarea>     
 					</div>
 
 					<div id="experience_div0" data-trigger="focus" data-toggle="popover">
+						
 						<div class="color_change_on_click">
 							<div class="float_left width70">
-								<textarea placeholder="Software" class="ex_textarea form-control background_transparent fixed_textarea position_name" rows="1" required></textarea>
+								<textarea placeholder="Software" class="ex_textarea form-control background_transparent fixed_textarea position_name sub_heading" rows="1" required></textarea>
 							</div>
 
 							<div class="float_right width25">
-									<div class="input-group selectMonths">
-										<input type="text" id="customdatepicker1" class="ex_textarea customdatepicker customdatepickerright form-control datepicker background_transparent"  placeholder="01/2017 - 02/2018" value='' readonly >
-									    <label class="ex_textarea input-group-addon padding_left0 background_transparent">
-									       <i class="fa fa-calendar calendar_icon" aria-hidden="true"></i>
-									    </label>     
-								    </div>
+								<div class="input-group selectMonths">
+									<input type="text" id="customdatepicker1" class="ex_textarea customdatepicker customdatepickerright form-control datepicker background_transparent date_font"  placeholder="01/2017 - 02/2018" value='' readonly >
+									<label class="ex_textarea input-group-addon padding_left0 background_transparent">
+									   <i class="fa fa-calendar calendar_icon" aria-hidden="true"></i>
+									</label>     
+								</div>
 							</div>
 							<div class="clearfix" style="height: 30px;"></div>
 						
 						<div>
-							<textarea placeholder="ABC Limitd" class="ex_textarea form-control background_transparent fixed_textarea company_name" rows="1" required ></textarea>	
+							<textarea placeholder="ABC Limitd" class="ex_textarea form-control background_transparent fixed_textarea company_name sub_heading" rows="1" required ></textarea>	
 						</div>
 
 						<div class="input-group">
 						  	<span class="ex_textarea input-group-addon exper_add"><i class="fa fa-map-marker padding_left0" aria-hidden="true"></i></span>
-							<textarea placeholder="safilo far east, Hong Kong" class="ex_textarea form-control background_transparent fixed_textarea padding_left0" rows="1" required></textarea>
+							<textarea placeholder="safilo far east, Hong Kong" class="resume_detail ex_textarea form-control background_transparent fixed_textarea padding_left0" rows="1" required></textarea>
 						</div>
 
 							
 
 						<div>
-							<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="ex_textarea form-control background_transparent fixed_textarea" rows="4" required ></textarea>
+							<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="resume_detail ex_textarea form-control background_transparent fixed_textarea" rows="4" required ></textarea>
+						</div>
+						
+						<div>
+							<textarea placeholder="Key responsibility" class="ex_textarea form-control background_transparent fixed_textarea resume_sub_detail key_respo_title" rows="1" required ></textarea>
+							
+							<div  id="test">
+								<ul>
+									<li id="res0" class="background_transparent responsibility menu-item-divided" >
+										<input placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" class="key_respo_input resume_detail ex_textarea background_transparent fixed_textarea width100" maxlength="50" required>
+									</li>
+								</ul>
+							</div>
 						</div>
 						</div>
 						<hr class="div_single_border"/>
@@ -339,14 +494,14 @@ function capitaliseName()
 			</div>
 			<div class="input-group color_change_on_click width100 originalArchi" data-trigger="focus" data-toggle="popover">
 				<span class="input-group-addon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-				<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
+				<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="resume_detail form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
 			</div>
 			
 			<hr class="div_single_border"/>
 
 			<div class="input-group color_change_on_click width100 originalArchi" data-trigger="focus" data-toggle="popover">
 				<span class="input-group-addon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-				<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
+				<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="resume_detail form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
 			</div>
 
 			<hr class="div_single_border"/>
@@ -363,12 +518,12 @@ function capitaliseName()
 			</div>					
 
 			<div class="color_change_on_click originalArchi"  data-trigger="focus" data-toggle="popover">
-				<div class="float_left width55">
-					<textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education details" required ></textarea>
+				<div class="float_left width52">
+					<textarea class="resume_detail form-control background_transparent fixed_textarea" rows="2" placeholder="Education details" required ></textarea>
 				</div>
-				<div class="width45 float_right">
+				<div class="width48 float_right">
 				    <div class="input-group selectMonths">
-						<input type="text" class="customdatepicker customdatepickerleft form-control datepicker background_transparent"  placeholder="01/2017 - 02/2018" value="" readonly >
+						<input type="text" class="date_font customdatepicker customdatepickerleft form-control datepicker background_transparent"  placeholder="01/2017 - 02/2018" value="" readonly >
 					    <label class="input-group-addon padding_left0 background_transparent">
 					       <i class="fa fa-calendar calendar_icon" aria-hidden="true"></i>
 					    </label>     
@@ -380,12 +535,12 @@ function capitaliseName()
 			<hr class="div_single_border"/>
 
 			<div class="color_change_on_click originalArchi"  data-trigger="focus" data-toggle="popover">
-				<div class="width55 float_left">
-					<textarea class="form-control background_transparent fixed_textarea" rows="2" placeholder="Education details" required ></textarea>
+				<div class="width52 float_left">
+					<textarea class="resume_detail form-control background_transparent fixed_textarea" rows="2" placeholder="Education details" required ></textarea>
 				</div>
-				<div class="width45 float_right">
+				<div class="width48 float_right">
 				    <div class="input-group selectMonths">
-						<input type="text" class="customdatepicker customdatepickerleft form-control datepicker background_transparent"  placeholder="01/2017 - 02/2018" value="" readonly >
+						<input type="text" class="date_font customdatepicker customdatepickerleft form-control datepicker background_transparent"  placeholder="01/2017 - 02/2018" value="" readonly >
 					    <label class="input-group-addon padding_left0 background_transparent">
 					       <i class="fa fa-calendar calendar_icon" aria-hidden="true"></i>
 					    </label>     
@@ -406,20 +561,20 @@ function capitaliseName()
 
 		<div class="color_change_on_click originalArchi" data-trigger="focus" data-toggle="popover">
 			<div class="float_left width50">
-				<textarea placeholder="Language" class="form-control background_transparent fixed_textarea" rows="1" required ></textarea>	
+				<textarea placeholder="Language" class="resume_detail form-control background_transparent fixed_textarea" rows="1" required ></textarea>	
 			</div>
 			<div class="float_right width50">
-				<textarea placeholder="Proficient" class="form-control background_transparent fixed_textarea" rows="1)" required ></textarea>
+				<textarea placeholder="Proficient" class="resume_detail form-control background_transparent fixed_textarea" rows="1" required ></textarea>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<hr class="div_single_border"/>
 		<div class="color_change_on_click originalArchi" data-trigger="focus" data-toggle="popover">
 			<div class="float_left width50">
-				<textarea placeholder="Language" class="form-control background_transparent fixed_textarea" rows="1" required ></textarea>	
+				<textarea placeholder="Language" class="resume_detail form-control background_transparent fixed_textarea" rows="1" required ></textarea>	
 			</div>
 			<div class="float_right width50">
-				<textarea placeholder="Proficient" class="form-control background_transparent fixed_textarea" rows="1" required ></textarea>
+				<textarea placeholder="Proficient" class="resume_detail form-control background_transparent fixed_textarea" rows="1" required ></textarea>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -435,15 +590,27 @@ function capitaliseName()
 		</div>
 
 		<div class="input-group color_change_on_click width100 originalArchi" data-trigger="focus" data-toggle="popover">
-			<span class="input-group-addon"><i class="fa fa-star" aria-hidden="true"></i></span>
-			<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="form-control background_transparent fixed_textarea textarea_with_icon" ></textarea>     
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-star" aria-hidden="true"></i></span>
+				<input placeholder="Interest1" class="margin_left0 resume_sub_detail form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
+			</div>
+								
+			<span class="">
+				<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="padding_top0 resume_detail inte_detail_sub form-control background_transparent fixed_textarea textarea_with_icon"></textarea>
+			</span>     
 		</div>
 
 		<hr class="div_single_border"/>
 
 		<div class="input-group color_change_on_click width100 originalArchi" data-trigger="focus" data-toggle="popover">
-			<span class="input-group-addon"><i class="fa fa-star" aria-hidden="true"></i></span>
-			<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-star" aria-hidden="true"></i></span>
+				<input placeholder="Interest2" class="margin_left0 resume_sub_detail form-control background_transparent fixed_textarea textarea_with_icon"></textarea>     
+			</div>
+								
+			<span class="">
+				<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="padding_top0 resume_detail inte_detail_sub form-control background_transparent fixed_textarea textarea_with_icon"></textarea>
+			</span>     
 		</div>
 
 		<hr class="div_single_border"/>
@@ -461,12 +628,12 @@ function capitaliseName()
 					<div class="originalArchi" data-trigger="focus" data-toggle="popover">
 						<div class="color_change_on_click">
 							<div class="float_left width70">
-								<textarea placeholder="Software" class="ex_textarea form-control background_transparent fixed_textarea position_name" rows="1" required></textarea>
+								<textarea placeholder="Software" class="ex_textarea form-control background_transparent fixed_textarea position_name sub_heading" rows="1" required></textarea>
 							</div>
 
 							<div class="float_right width25">
 									<div class="input-group selectMonths">
-									<input type="text" class="ex_textarea customdatepicker customdatepickerright form-control datepicker background_transparent"  placeholder="01/2017 - 02/2018" value='' readonly >								    <label class="ex_textarea input-group-addon padding_left0 background_transparent">
+									<input type="text" class="date_font ex_textarea customdatepicker customdatepickerright form-control datepicker background_transparent"  placeholder="01/2017 - 02/2018" value='' readonly >								    <label class="ex_textarea input-group-addon padding_left0 background_transparent">
 								       <i class="fa fa-calendar calendar_icon" aria-hidden="true"></i>
 								    </label>     
 								    </div>
@@ -474,7 +641,7 @@ function capitaliseName()
 							<div class="clearfix" style="height: 30px;"></div>
 						
 						<div>
-							<textarea placeholder="ABC Limitd" class="ex_textarea form-control background_transparent fixed_textarea company_name" rows="1" required ></textarea>	
+							<textarea placeholder="ABC Limitd" class="sub_heading ex_textarea form-control background_transparent fixed_textarea company_name" rows="1" required ></textarea>	
 						</div>
 
 						<div class="input-group">
@@ -485,21 +652,14 @@ function capitaliseName()
 							
 
 						<div>
-							<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="ex_textarea form-control background_transparent fixed_textarea" rows="4" required ></textarea>
+							<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="resume_detail ex_textarea form-control background_transparent fixed_textarea" rows="4" required ></textarea>
 						</div>
 						</div>
 						<hr class="div_single_border"/>
 					</div>
-		</div>		</div>
-
-</body>
-
-
-
-       
-
-        <!-- scripts -->
-        <script src="js/tether.min.js"></script>
+		</div>		
+	</div>
+	<script src="js/tether.min.js"></script>
         <script src="js/datePicker.js"></script>
 		<script>
 			$('.customdatepickerright')
@@ -524,6 +684,8 @@ function capitaliseName()
             
 
 		</script>
-
-
 </html>
+	
+
+<script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-all.min.js"></script>
+<script type="text/javascript" src="bootstrap-iconpicker/js/bootstrap-iconpicker.js"></script>

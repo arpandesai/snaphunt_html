@@ -63,6 +63,15 @@ $(document).ready(function(){
 				    content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
 				});
 				new_div = '#achivement_div'+ac_count;
+				$('.fixed_textarea').scroll(function () {
+	    $(this).css("overflow", "hidden");      /* for the mozilla browser problem */
+	    $(this).animate({scrollTop: $(this).outerHeight()});
+	    while ($(this).scrollTop() > 0) {       /* for the copy and paste case */               
+	        lines=$(this).val().slice(0,-1);
+	        $(this).val(lines);
+	    }
+	    $(this).css("overflow", "auto");        /* For the mozilla browser problem */
+	});
 				ac_count++;	
 			});
 			$('html, body').animate({scrollTop: $(new_div).offset().top}, 1500);
@@ -100,6 +109,14 @@ $(document).ready(function(){
 				    content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
 				});
 				new_div = '#education_div'+ed_count;
+				$('.fixed_textarea').scroll(function () {
+	    $(this).css("overflow", "hidden");      /* for the mozilla browser problem */
+	    $(this).animate({scrollTop: $(this).outerHeight()});
+	    while ($(this).scrollTop() > 0) {       /* for the copy and paste case */               
+	        lines=$(this).val().slice(0,-1);
+	        $(this).val(lines);
+	    }
+	});
 				ed_count++;	
 			});
 			$('.customdatepickerleft')
@@ -147,6 +164,14 @@ $(document).ready(function(){
 				    content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
 				});
 				new_div = '#languages_div'+la_count;
+				$('.fixed_textarea').scroll(function () {
+	    $(this).css("overflow", "hidden");      /* for the mozilla browser problem */
+	    $(this).animate({scrollTop: $(this).outerHeight()});
+	    while ($(this).scrollTop() > 0) {       /* for the copy and paste case */               
+	        lines=$(this).val().slice(0,-1);
+	        $(this).val(lines);
+	    }
+	});
 				la_count++;	
 			});
 			$('html, body').animate({scrollTop: $(new_div).offset().top}, 1500);
@@ -184,6 +209,14 @@ $(document).ready(function(){
 				    content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
 				});
 				new_div = '#interests_div'+in_count;
+				$('.fixed_textarea').scroll(function () {
+	    $(this).css("overflow", "hidden");      /* for the mozilla browser problem */
+	    $(this).animate({scrollTop: $(this).outerHeight()});
+	    while ($(this).scrollTop() > 0) {       /* for the copy and paste case */               
+	        lines=$(this).val().slice(0,-1);
+	        $(this).val(lines);
+	    }
+	});
 				in_count++;	
 			});
 			$('html, body').animate({scrollTop: $(new_div).offset().top}, 1500);
@@ -221,6 +254,14 @@ $(document).ready(function(){
 				    content : '<i class="fa fa-plus" id="add_achivement" aria-hidden="true"></i><i class="fa fa-trash del_achivement" aria-hidden="true"></i>'
 				});
 				new_div = '#experience_div'+ex_count;
+				$('.fixed_textarea').scroll(function () {
+	    $(this).css("overflow", "hidden");      /* for the mozilla browser problem */
+	    $(this).animate({scrollTop: $(this).outerHeight()});
+	    while ($(this).scrollTop() > 0) {       /* for the copy and paste case */               
+	        lines=$(this).val().slice(0,-1);
+	        $(this).val(lines);
+	    }
+	});
 				ex_count++;	
 			});
 			$('.customdatepickerright')

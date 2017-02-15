@@ -668,11 +668,6 @@ h2
     text-align: center;
     font-size:19px!important;
 }    
-.fa-plus-circle
-{
-	width: 1%;
-}
-
 
 
 #add_achivement,#del_achivement
@@ -987,7 +982,10 @@ ul .responsibility
 {
 	display:none!important;
 }
-
+.padding_left2
+{
+	padding-left:2px;
+}
 a
 {
 	color:white;

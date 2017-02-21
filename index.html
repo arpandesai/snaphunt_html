@@ -1,11 +1,11 @@
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/query.js"></script>
 	<script src="js/side_menu.js"></script>
+	<script src="js/autoexpand_textarea.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/side_menu.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
@@ -35,9 +35,8 @@
   		<span id="addExpe" class="sidemenu">Add Experience</span>
   		<span id="color" class="sidemenu"data-toggle="modal" data-target="#change_heading_color">Color</span>
 	</div> -->
-		
 	<div class="top_full">
-		<ul class="container top_container">
+		<ul class="row top_container">
 			<li class="col-lg-2 col-md-3 main_div_5type">
 				<span class="template active_top"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i><span class="top_icon_text">Template</span></span>
 			</li>
@@ -60,66 +59,66 @@
 	<div class="top_full2">
 		<div class="container top_container2 template_div">
 			<div class="col-lg-3 col-md-3 main_div_4type">
-				<span class=""><a href="index.html">Template 1</a></span>
+				<span class="t1"><a href="index.html">Template 1</a></span>
 			</div>
 			<div class="col-lg-3 col-md-3 main_div_4type">
-				<span class=""><a href="snap_60_40.html">Template 2</a></span>
+				<span class="t1"><a href="snap_60_40.html">Template 2</a></span>
 			</div>
 			<div class="col-lg-3 col-md-3 main_div_4type">
-				<span class=""><a href="snapfull.html">Template 3</a></span>
+				<span class="t1"><a href="snapfull.html">Template 3</a></span>
 			</div>
 		</div>
 		
 		<ul class="container top_container2 section_div">
 			<li class="main_div_4type">
-				<span class="sidemenu" id="addAchi">Achivement</span>
+				<span class="sidemenu t1" id="addAchi">Achivement</span>
 			</li>
 			<li class="main_div_4type">
-				<span class="sidemenu" id="addEduc">Education</span>
+				<span class="sidemenu t1" id="addEduc">Education</span>
 			</li>
 			<li class="main_div_4type">
-				<span class="sidemenu" id="addLang">Language</span>
+				<span class="sidemenu t1" id="addLang">Language</span>
 			</li>
 			<li class="main_div_4type">
-				<span class="sidemenu" id="addInte">Interests</span>
+				<span class="sidemenu t1" id="addInte">Interests</span>
 			</li>
 			<li class="main_div_4type">
-				<span class="sidemenu" id="addExpe">Experience</span>
+				<span class="sidemenu t1s" id="addExpe">Experience</span>
 			</li>
 		</ul>
 
 		<div class="container top_container2 font_div">
 			<div class="col-lg-3 col-md-3 main_div_4type">
-				<span class="">Font1</span>
+				<span class="t1">Font1</span>
 			</div>
 			<div class="col-lg-3 col-md-3 main_div_4type">
-				<span class="">Font2</span>
+				<span class="t1">Font2</span>
 			</div>
 			<div class="col-lg-3 col-md-3 main_div_4type">
-				<span class="">Font3</span>
+				<span class="t1">Font3</span>
 			</div>
 			<div class="col-lg-3 col-md-3 main_div_4type">
-				<span class="">Font4</span>
+				<span class="t1">Font4</span>
 			</div>
 		</div>
 		<ul class="container top_container2 color_div">
 			<li class="col-lg-2 col-md-3 main_div_4type">
-				<span class="color" id="c_9933cc">color</span>
+				<span class="color t1" id="c_9933cc">color</span>
 			</li>
 			<li class="col-lg-2 col-md-3 main_div_4type">
-				<span class="color" id="c_333366">color</span>
+				<span class="color t1" id="c_333366">color</span>
 			</li>
 			<li class="col-lg-2 col-md-3 main_div_4type">
-				<span class="color" id="c_ff3366">color</span>
+				<span class="color t1" id="c_ff3366">color</span>
 			</li>
 			<li class="col-lg-2 col-md-3 main_div_4type">
-				<span class="color" id="c_0099ff">color</span>
+				<span class="color t1" id="c_0099ff">color</span>
 			</li>
 			<li class="col-lg-2 col-md-3 main_div_4type">
-				<span class="color" id="c_ff6633">color</span>
+				<span class="color t1" id="c_ff6633">color</span>
 			</li>
 			<li class="col-lg-2 col-md-3 main_div_4type">
-				<span class="color" id="c_003e5a">Default</span>
+				<span class="color t1" id="c_003e5a">Default</span>
 			</li>
 
 		</ul>
@@ -186,7 +185,7 @@
 				</span>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12">
-				<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="form-control background_transparent resume_detail padding_top0 summery_textarea summery_padding_left1" rows="3" aria-describedby="basic-addon1" id="captext" onkeydown = "capitaliseName()" required></textarea>
+				<textarea rows="3" data-min-rows="3" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="autoExpand form-control background_transparent resume_detail padding_top0 summery_textarea summery_padding_left1" aria-describedby="basic-addon1" id="captext" onkeydown = "capitaliseName()" required></textarea>
 			</div>
 		</div>
 		
@@ -228,7 +227,7 @@
 						<span class="input-group-addon">
 							<button class="fa fa-trophy" aria-hidden="true" role="iconpicker" style="border:none;background-color:transparent;padding:3;"></button>
 						</span>
-						<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="ex_textarea form-control background_transparent fixed_textarea textarea_with_icon resume_detail" id="captext" onkeydown = "capitaliseName()"></textarea>     
+						<textarea rows="2" data-min-rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="autoExpand ex_textarea form-control background_transparent fixed_textarea textarea_with_icon resume_detail" id="captext" onkeydown = "capitaliseName()"></textarea>     
 					</div>
 
 					<hr class="div_single_border"/>
@@ -236,7 +235,7 @@
 					<div class="input-group color_change_on_click width100" id="achivement_div1" data-trigger="focus" data-toggle="popover">
 						
 						<span class="input-group-addon"><i class="fa fa-trophy" aria-hidden="true"></i></span>
-    					<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="ex_textarea form-control background_transparent fixed_textarea textarea_with_icon resume_detail" id="captext" onkeydown = "capitaliseName()"></textarea>     
+    					<textarea rows="2" data-min-rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="autoExpand ex_textarea form-control background_transparent fixed_textarea textarea_with_icon resume_detail" id="captext" onkeydown = "capitaliseName()"></textarea>     
 					</div>
 
 					<hr class="div_single_border"/>
@@ -346,7 +345,7 @@
 						</div>
 											
 						<span class="">
-							<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="padding_top0 resume_detail inte_detail_sub form-control background_transparent fixed_textarea"></textarea>
+							<textarea rows="2" data-min-rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="autoExpand padding_top0 resume_detail inte_detail_sub form-control background_transparent fixed_textarea"></textarea>
 						</span>
 					</div>	
 					
@@ -360,7 +359,7 @@
 						</div>
 											
 						<span class="">
-							<textarea rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="padding_top0 resume_detail inte_detail_sub form-control background_transparent fixed_textarea"></textarea>
+							<textarea rows="2" data-min-rows="2" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." class="autoExpand padding_top0 resume_detail inte_detail_sub form-control background_transparent fixed_textarea"></textarea>
 						</span>     
 					</div>
 
@@ -405,11 +404,8 @@
 						  	<span class="ex_textarea input-group-addon exper_add"><i class="fa fa-map-marker padding_left0" aria-hidden="true"></i></span>
 							<textarea placeholder="safilo far east, Hong Kong" class="resume_detail ex_textarea form-control background_transparent fixed_textarea padding_left0" rows="1" required></textarea>
 						</div>
-
-							
-
 						<div>
-							<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="resume_detail ex_textarea form-control background_transparent fixed_textarea" rows="4" required ></textarea>
+							<textarea placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." class="autoExpand resume_detail ex_textarea form-control background_transparent fixed_textarea" rows="3" data-min-rows="3"  required ></textarea>
 						</div>
 						
 						<div>

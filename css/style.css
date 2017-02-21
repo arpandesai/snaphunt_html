@@ -14,6 +14,7 @@ body
 {
 	background-color:rgb(248,248,248)
 	color:#000000!important;
+	overflow-x:hidden;
 }
 .top_full
 {
@@ -27,10 +28,6 @@ body
 }
 .top_container
 {
-	background: -webkit-linear-gradient(left, #009AFE , #45B4FC); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(right, #009AFE, #45B4FC); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(right, #009AFE, #45B4FC); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to right, #009AFE, #45B4FC); /* Standard syntax */
 	box-shadow:none!important;
 	padding:0!important;
 	padding-top:3%!important;
@@ -994,7 +991,15 @@ a:hover
 {
 	color:white;
 }
-
+.t1
+{
+	display: inline-block;
+	padding:0%;
+}
+.t1:hover
+{
+	cursor:pointer;
+}
 @media only screen and (min-width : 992px) {
 	.width25
 	{
